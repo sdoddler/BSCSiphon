@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Altura.png" />
+    <None Remove="BSC.png" />
+    <None Remove="Github-120.png" />
+    <None Remove="twitter-128.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Extended.Wpf.Toolkit" Version="4.1.0" />
+    <PackageReference Include="Nethereum.Signer" Version="4.1.1" />
+    <PackageReference Include="Nethereum.Web3" Version="4.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Altura.png" />
+    <Resource Include="BSC.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Github-120.png" />
+    <Resource Include="twitter-128.png" />
+  </ItemGroup>
+
+</Project>
